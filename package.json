@@ -1,0 +1,19 @@
+{
+  "name": "build-strong",
+  "version": "1.0.0",
+  "description": "First app for the crud",
+  "main": "app.js",
+  "scripts": {
+    "test": "scripts.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ZealousOne"
+  },
+  "keywords": [
+    "build",
+    "strong"
+  ],
+  "author": "Garrett Zeal",
+  "license": "UNLICENSED"
+}
