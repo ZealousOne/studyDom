@@ -1,0 +1,4 @@
+MONGO_PASSWORD = RJ2RaYogylUfdWpy
+MONGO_USERNAME = unovan
+
+MONGO_URI = mongodb+srv:`${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.gckd6uw.mongodb.net/?retryWrites=true&w=majority`

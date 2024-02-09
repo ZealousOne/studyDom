@@ -1,24 +1,28 @@
-// Select the body directly
-// what is the below needed for? can comment out
-const body = document.body;
+const form = document.createElement('form');
+document.body.appendChild(form);
 
-// Create an h1 element
-const h1 = document.createElement('h1');
-h1.textContent = "Welcome to My Website";
+const input = document.createElement('input');
+input.placeholder = "Type here or else I'll scream";
+form.appendChild(input);
 
-// Append the h1 element to the main element
-const main = document.querySelector('main');
-main.appendChild(h1);
+const button = document.createElement('button');
+button.innerText = 'Click here!';
+button.role = 'ADD';
+form.appendChild(button);
 
-// Create a div element
-const div = document.createElement('div');
+const ul = document.createElement('ul');
+document.body.appendChild(ul)
 
-// Create a divText element and set its content
-const divText = document.createElement('div');
-divText.textContent = "hellllllooooo Div";
+const removeElement = (el) => {
+  console.log(el)
+  el.remove();
+}
 
-// Append the divText element to the div element
-div.appendChild(divText);
-
-// Append the div element to the body
-document.body.appendChild(div);
+form.onsubmit = (event) => {
+  event.preventDefault()
+  const li = document.createElement('li');
+  ul.appendChild(li);
+  li.innerText = input.value
+  li.onclick = removeElement.bind(null, li)
+  input.value = '';
+}

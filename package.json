@@ -15,5 +15,10 @@
     "strong"
   ],
   "author": "Garrett Zeal",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
 }
